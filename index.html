@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Enes Kandemir - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="binaryLeft" class="binary-side"></canvas>
+    <canvas id="binaryRight" class="binary-side"></canvas>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <div class="profile-bg">
+                    <canvas id="binaryCanvas"></canvas>
+                    <img src="Ekran görüntüsü 2025-08-28 125248.png" alt="Profile Photo" class="profile-img">
+                </div>
+                <h1 style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+                    Muhammed Enes Kandemir
+                   
+                </h1>
+                <p class="title">Software Engineer | Web Developer</p>
+                <p class="contact" style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        
+                        Email: eneskandemir@example.com
+                    </span>
+                    <span>Phone: +90 555 555 5555</span>
+                    <span>Location: Istanbul, Turkey</span>
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/eneskandemir" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/eneskandemir" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">𝐴𝑏𝑜𝑢𝑡</a></li>
+                <li><a href="#experience">𝐸𝑥𝑝𝑒𝑟𝑖𝑒𝑛𝑐𝑒</a></li>
+                <li><a href="#education">𝐸𝑑𝑢𝑐𝑎𝑡𝑖𝑜𝑛</a></li>
+                <li><a href="#skills">𝑆𝑘𝑖𝑙𝑙𝑠</a></li>
+                <li><a href="#contact">𝐶𝑜𝑛𝑡𝑎𝑐𝑡</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Passionate software engineer with experience in web development, backend systems, and cloud technologies. Always eager to learn and build impactful solutions.</p>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="exp-item">
+                    <h3>Software Engineer</h3>
+                    <p class="exp-company">Tech Company, Istanbul</p>
+                    <p class="exp-date">2023 - Present</p>
+                    <ul>
+                        <li>Developed scalable web applications using React and Node.js.</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality products.</li>
+                        <li>Implemented CI/CD pipelines and automated testing.</li>
+                    </ul>
+                </div>
+                <div class="exp-item">
+                    <h3>Intern Web Developer</h3>
+                    <p class="exp-company">Startup, Istanbul</p>
+                    <p class="exp-date">2022 - 2023</p>
+                    <ul>
+                        <li>Built responsive websites with HTML, CSS, and JavaScript.</li>
+                        <li>Optimized site performance and SEO.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="edu-item">
+                    <h3>BSc Computer Engineering</h3>
+                    <p class="edu-school">Istanbul Technical University</p>
+                    <p class="edu-date">2019 - 2023</p>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li class="skill" data-info="JavaScript: Dynamic scripting language for web development.">JavaScript</li>
+                    <li class="skill" data-info="React: Popular JavaScript library for building user interfaces.">React</li>
+                    <li class="skill" data-info="Node.js: JavaScript runtime for server-side development.">Node.js</li>
+                    <li class="skill" data-info="HTML & CSS: Core technologies for web structure and styling.">HTML &amp; CSS</li>
+                    <li class="skill" data-info="Python: Versatile programming language for many domains.">Python</li>
+                    <li class="skill" data-info="Git & GitHub: Version control and collaboration tools.">Git &amp; GitHub</li>
+                    <li class="skill" data-info="Docker: Containerization platform for scalable deployment.">Docker</li>
+                    <li class="skill" data-info="CI/CD: Continuous Integration and Deployment practices.">CI/CD</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f464.svg" alt="Profile Logo" style="width:22px;height:22px;vertical-align:middle;">
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2709.svg" alt="Mail Logo" style="width:22px;height:22px;vertical-align:middle;">
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <span style="display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: #ffe066; border-radius: 4px; font-weight: bold; color: #222;">T</span>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="formMessage"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Muhammed Enes Kandemir</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
