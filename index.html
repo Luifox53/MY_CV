@@ -1,122 +1,208 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammed Enes Kandemir - CV</title>
+    <title>Enes - Computer Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="binaryLeft" class="binary-side"></canvas>
-    <canvas id="binaryRight" class="binary-side"></canvas>
-    <div class="container">
-        <header>
-            <div class="profile">
-                <div class="profile-bg">
-                    <canvas id="binaryCanvas"></canvas>
-                    <img src="Ekran görüntüsü 2025-08-28 125248.png" alt="Profile Photo" class="profile-img">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Muhammed Enes Kandemir</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-en="Home" data-tr="Anasayfa" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-tr="Hakkımda" onclick="closeMenu()">About</a></li>
+                <li><a href="#education" class="nav-link" data-en="Education" data-tr="Eğitim" onclick="closeMenu()">Education</a></li>
+                <li><a href="#skills" class="nav-link" data-en="Skills" data-tr="Yetenekler" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-tr="Projeler" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-tr="İletişim" onclick="closeMenu()">Contact</a></li>
+                <li><button class="language-toggle" onclick="toggleLanguage()" data-en="TR" data-tr="EN">TR</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img id="profileImage" src="Mek_PP.png" alt="Profile Photo" class="profile-image">
+            </div>
+            <h1 class="hero-title" data-en="Hi, I'm Enes" data-tr="Merhaba, Ben Enes">Hi, I'm Enes</h1>
+            <p class="hero-subtitle" data-en="Computer Engineering Student | 3rd Year" data-tr="Bilgisayar Mühendisliği Öğrencisi | 3. Yıl">Computer Engineering Student | 3rd Year</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="animateCode('hello')" data-en="Say Hello" data-tr="Merhaba De">Say Hello</button>
+                <button class="btn btn-secondary" onclick="animateCode('projects')" data-en="View Projects" data-tr="Projeleri Gör">View Projects</button>
+                <button class="btn btn-primary" onclick="animateCode('social')" data-en="Social Media" data-tr="Sosyal Medya">Social Media</button>
+            </div>
+        </div>
+        <div class="code-animation" id="codeAnimation"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 data-en="About Me" data-tr="Hakkımda">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p data-en="Passionate computer engineering student with a strong foundation in programming and web development. I love solving complex problems and building innovative solutions. Currently pursuing my degree at Artvin Çoruh University while constantly expanding my technical skills through practical projects." data-tr="Programlama ve web geliştirmede güçlü bir temele sahip, tutkulu bir bilgisayar mühendisliği öğrencisiyim. Karmaşık sorunları çözmek ve yenilikçi çözümler geliştirmekten hoşlanırım. Şu anda Artvin Çoruh Üniversitesi'nde lisans derecesine devam ederken, pratik projeler aracılığıyla teknik becerilerimi sürekli genişletiyorum.">Passionate computer engineering student with a strong foundation in programming and web development. I love solving complex problems and building innovative solutions. Currently pursuing my degree at Artvin Çoruh University while constantly expanding my technical skills through practical projects.</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <label data-en="Full Name:" data-tr="Ad Soyad:">Full Name:</label>
+                    <span class="info-value">Muhammed Enes Kandemir</span>
                 </div>
-                <h1 style="display: flex; align-items: center; justify-content: center; gap: 12px;">
-                    Muhammed Enes Kandemir
-                   
-                </h1>
-                <p class="title">Software Engineer | Web Developer</p>
-                <p class="contact" style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;">
-                    <span style="display: flex; align-items: center; gap: 6px;">
-                        
-                        Email: eneskandemir@example.com
-                    </span>
-                    <span>Phone: +90 555 555 5555</span>
-                    <span>Location: Istanbul, Turkey</span>
-                </p>
-                <div class="social-links">
-                    <a href="https://github.com/eneskandemir" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/eneskandemir" target="_blank">LinkedIn</a>
+                <div class="info-item">
+                    <label data-en="Email:" data-tr="E-posta:">Email:</label>
+                    <span class="info-value">muhammedist44@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <label data-en="Phone:" data-tr="Telefon:">Phone:</label>
+                    <span class="info-value">+90 505 420 28 52</span>
+                </div>
+                <div class="info-item">
+                    <label data-en="Location:" data-tr="Konum:">Location:</label>
+                    <span class="info-value">İstanbul, Türkiye</span>
+                </div>
+                <div class="info-item">
+                    <label data-en="GitHub:" data-tr="GitHub:">GitHub:</label>
+                    <span class="info-value">github.com/Luifox53</span>
+                </div>
+                <div class="info-item">
+                    <label data-en="LinkedIn:" data-tr="LinkedIn:">LinkedIn:</label>
+                    <span class="info-value">linkedin.com/in/muhammed-enes-kandemir-5829602a1/</span>
                 </div>
             </div>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#about">𝐴𝑏𝑜𝑢𝑡</a></li>
-                <li><a href="#experience">𝐸𝑥𝑝𝑒𝑟𝑖𝑒𝑛𝑐𝑒</a></li>
-                <li><a href="#education">𝐸𝑑𝑢𝑐𝑎𝑡𝑖𝑜𝑛</a></li>
-                <li><a href="#skills">𝑆𝑘𝑖𝑙𝑙𝑠</a></li>
-                <li><a href="#contact">𝐶𝑜𝑛𝑡𝑎𝑐𝑡</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Passionate software engineer with experience in web development, backend systems, and cloud technologies. Always eager to learn and build impactful solutions.</p>
-            </section>
-            <section id="experience">
-                <h2>Experience</h2>
-                <div class="exp-item">
-                    <h3>Software Engineer</h3>
-                    <p class="exp-company">Tech Company, Istanbul</p>
-                    <p class="exp-date">2023 - Present</p>
-                    <ul>
-                        <li>Developed scalable web applications using React and Node.js.</li>
-                        <li>Collaborated with cross-functional teams to deliver high-quality products.</li>
-                        <li>Implemented CI/CD pipelines and automated testing.</li>
-                    </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 data-en="Education" data-tr="Eğitim">Education</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <div class="edu-header">
+                    <h3>Artvin Çoruh University</h3>
+                    <span class="edu-date">2023 - Still</span>
                 </div>
-                <div class="exp-item">
-                    <h3>Intern Web Developer</h3>
-                    <p class="exp-company">Startup, Istanbul</p>
-                    <p class="exp-date">2022 - 2023</p>
-                    <ul>
-                        <li>Built responsive websites with HTML, CSS, and JavaScript.</li>
-                        <li>Optimized site performance and SEO.</li>
-                    </ul>
+                <p class="edu-degree" data-en="Bachelor of Science in Computer Engineering" data-tr="Bilgisayar Mühendisliği Lisans Derecesi">Bachelor of Science in Computer Engineering</p>
+                <p class="edu-description" data-en="Currently in 3rd year" data-tr="Şu anda 3. yılda">Currently in 3rd year</p>
+            </div>
+            <div class="education-item">
+                <div class="edu-header">
+                    <h3>Mustafa Kemal Anatolian Highschool</h3>
+                    <span class="edu-date">2018 - 2022</span>
                 </div>
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-                <div class="edu-item">
-                    <h3>BSc Computer Engineering</h3>
-                    <p class="edu-school">Istanbul Technical University</p>
-                    <p class="edu-date">2019 - 2023</p>
+                <p class="edu-degree" data-en="High School Diploma" data-tr="Lise Diploması">High School Diploma</p>
+                <p class="edu-description" data-en="Completed education" data-tr="Eğitimi tamamlandı">Completed education</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 data-en="Technical Skills" data-tr="Teknik Yetenekler">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3 data-en="Programming Languages" data-tr="Programlama Dilleri">Programming Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">C++</div>
+                    <div class="skill-tag">C#</div>
                 </div>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li class="skill" data-info="JavaScript: Dynamic scripting language for web development.">JavaScript</li>
-                    <li class="skill" data-info="React: Popular JavaScript library for building user interfaces.">React</li>
-                    <li class="skill" data-info="Node.js: JavaScript runtime for server-side development.">Node.js</li>
-                    <li class="skill" data-info="HTML & CSS: Core technologies for web structure and styling.">HTML &amp; CSS</li>
-                    <li class="skill" data-info="Python: Versatile programming language for many domains.">Python</li>
-                    <li class="skill" data-info="Git & GitHub: Version control and collaboration tools.">Git &amp; GitHub</li>
-                    <li class="skill" data-info="Docker: Containerization platform for scalable deployment.">Docker</li>
-                    <li class="skill" data-info="CI/CD: Continuous Integration and Deployment practices.">CI/CD</li>
-                </ul>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <form id="contactForm">
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f464.svg" alt="Profile Logo" style="width:22px;height:22px;vertical-align:middle;">
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2709.svg" alt="Mail Logo" style="width:22px;height:22px;vertical-align:middle;">
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <span style="display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: #ffe066; border-radius: 4px; font-weight: bold; color: #222;">T</span>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
-                <div id="formMessage"></div>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 Muhammed Enes Kandemir</p>
-        </footer>
-    </div>
+            </div>
+            <div class="skill-category">
+                <h3 data-en="Web Development" data-tr="Web Geliştirme">Web Development</h3>
+                <div class="skill-items">
+                    <div class="skill-tag">PHP</div>
+                    <div class="skill-tag">WordPress</div>
+                    <div class="skill-tag">HTML&Css</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 data-en="Other Skills" data-tr="Diğer Yetenekler">Other Skills</h3>
+                <div class="skill-items">
+                    <div class="skill-tag">Project Manager</div>
+                    <div class="skill-tag">Solutionist</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 data-en="Projects" data-tr="Projeler">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>YEDOKS</h3>
+                </div>
+                <p data-en="Autonomous and smart campus irrigation system based on renewable energy." data-tr="Yenilenebilir enerjiye dayalı otonom, akıllı ve veri odaklıkampüs sulama sistemi.">Describe your first project here. What technologies did you use? What problem did it solve?</p>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">IoT</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">Data Analysis</span>
+                </div>
+                <a href="https://github.com/Luifox53/Automate-Irrigation-System" class="project-link" target="_blank" data-en="View Project" data-tr="Projeyi Gör">View Project</a>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Transfer-Reservation Site</h3>
+                </div>
+                <p data-en="A website that allows customers who need VIP transfers within Antalya to book a vehicle." data-tr="Antalya içi vip transfere ihtiyacı olan müşterilerin araç rezervasyonu yapmasına olanak veren bir site.">Describe your second project here. Highlight the key features and your contributions.</p>
+                <div class="project-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">Web Development</span>
+                    <span class="tag">Server Management</span>
+                    <span class="tag">WordPress</span>
+                </div>
+                <a href="https://antalyatransfer-vip.com/" class="project-link" target="_blank" data-en="View Project" data-tr="Projeyi Gör">View Project</a>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>DB Management System</h3>
+                </div>
+                <p data-en="Describe your third project. Include any awards, recognitions, or impressive results." data-tr="Üçüncü projenizi açıklayın. Ödülleriniz, takdir görenleriniz veya etkileyici sonuçlarınızı ekleyin.">Describe your third project. Include any awards, recognitions, or impressive results.</p>
+                <div class="project-tags">
+                    <span class="tag">XAMMP</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">Dia Diagram</span>
+                </div>
+                <a href="#" class="project-link" data-en="View Project" data-tr="Projeyi Gör">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" data-placeholder-en="Your Name" data-placeholder-tr="Adınız" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" data-placeholder-en="Your Email" data-placeholder-tr="E-postanız" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" data-placeholder-en="Your Message" data-placeholder-tr="Mesajınız" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-en="Send Message" data-tr="Mesaj Gönder">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-en="&copy; 2025 Enes Portfolio. All rights reserved." data-tr="&copy; 2025 Enes Portfolyosu. Tüm hakları saklıdır.">&copy; 2025 Enes Portfolio. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
