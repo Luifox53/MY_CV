@@ -23,23 +23,34 @@
                 <li><a href="#skills" class="nav-link" data-en="Skills" data-tr="Yetenekler" onclick="closeMenu()">Skills</a></li>
                 <li><a href="#projects" class="nav-link" data-en="Projects" data-tr="Projeler" onclick="closeMenu()">Projects</a></li>
                 <li><a href="#contact" class="nav-link" data-en="Contact" data-tr="İletişim" onclick="closeMenu()">Contact</a></li>
-                <li><button class="language-toggle" onclick="toggleLanguage()" data-en="TR" data-tr="EN">TR</button></li>
             </ul>
+            <button class="language-toggle" onclick="toggleLanguage()">
+                <span class="lang-text">TR</span>
+            </button>
         </div>
     </nav>
 
     <!-- Home Section -->
     <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="animated-bg"></div>
+        <div class="morphing-shape shape-1"></div>
+        <div class="morphing-shape shape-2"></div>
         <div class="hero-content">
             <div class="profile-image-container">
                 <img id="profileImage" src="Mek_PP.png" alt="Profile Photo" class="profile-image">
             </div>
-            <h1 class="hero-title" data-en="Hi, I'm Enes" data-tr="Merhaba, Ben Enes">Hi, I'm Enes</h1>
-            <p class="hero-subtitle" data-en="Computer Engineering Student | 3rd Year" data-tr="Bilgisayar Mühendisliği Öğrencisi | 3. Yıl">Computer Engineering Student | 3rd Year</p>
-            <div class="cta-buttons">
-                <button class="btn btn-primary" onclick="animateCode('hello')" data-en="Say Hello" data-tr="Merhaba De">Say Hello</button>
-                <button class="btn btn-secondary" onclick="animateCode('projects')" data-en="View Projects" data-tr="Projeleri Gör">View Projects</button>
-                <button class="btn btn-primary" onclick="animateCode('social')" data-en="Social Media" data-tr="Sosyal Medya">Social Media</button>
+            <h1 class="hero-title" data-en="Hi, I'm Enes" data-tr="Merhaba, Ben Enes"><span class="word">Hi,</span> <span class="word">I'm</span> <span class="gradient-text word">Enes</span></h1>
+            <p class="hero-subtitle hero-animated" data-en="Computer Engineering Student | 3rd Year" data-tr="Bilgisayar Mühendisliği Öğrencisi | 3. Yıl">Computer Engineering Student | 3rd Year</p>
+        </div>
+        <div class="hero-3d">
+            <div class="cube">
+                <div class="cube-face front">3D</div>
+                <div class="cube-face back">Dev</div>
+                <div class="cube-face right">Web</div>
+                <div class="cube-face left">Code</div>
+                <div class="cube-face top">Skills</div>
+                <div class="cube-face bottom">Fun</div>
             </div>
         </div>
         <div class="code-animation" id="codeAnimation"></div>
@@ -47,35 +58,64 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2 data-en="About Me" data-tr="Hakkımda">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p data-en="Passionate computer engineering student with a strong foundation in programming and web development. I love solving complex problems and building innovative solutions. Currently pursuing my degree at Artvin Çoruh University while constantly expanding my technical skills through practical projects." data-tr="Programlama ve web geliştirmede güçlü bir temele sahip, tutkulu bir bilgisayar mühendisliği öğrencisiyim. Karmaşık sorunları çözmek ve yenilikçi çözümler geliştirmekten hoşlanırım. Şu anda Artvin Çoruh Üniversitesi'nde lisans derecesine devam ederken, pratik projeler aracılığıyla teknik becerilerimi sürekli genişletiyorum.">Passionate computer engineering student with a strong foundation in programming and web development. I love solving complex problems and building innovative solutions. Currently pursuing my degree at Artvin Çoruh University while constantly expanding my technical skills through practical projects.</p>
-            </div>
-            <div class="info-grid">
-                <div class="info-item">
-                    <label data-en="Full Name:" data-tr="Ad Soyad:">Full Name:</label>
-                    <span class="info-value">Muhammed Enes Kandemir</span>
+        <div class="container">
+            <h2 class="section-title" data-en="About Me" data-tr="Hakkımda">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="typing-text" data-en="Passionate computer engineering student with a strong foundation in programming and web development. I love solving complex problems and building innovative solutions. Currently pursuing my degree at Artvin Çoruh University while constantly expanding my technical skills through practical projects." data-tr="Programlama ve web geliştirmede güçlü bir temele sahip, tutkulu bir bilgisayar mühendisliği öğrencisiyim. Karmaşık sorunları çözmek ve yenilikçi çözümler geliştirmekten hoşlanırım. Şu anda Artvin Çoruh Üniversitesi'nde lisans derecesine devam ederken, pratik projeler aracılığıyla teknik becerilerimi sürekli genişletiyorum.">Passionate computer engineering student with a strong foundation in programming and web development. I love solving complex problems and building innovative solutions. Currently pursuing my degree at Artvin Çoruh University while constantly expanding my technical skills through practical projects.</p>
                 </div>
-                <div class="info-item">
-                    <label data-en="Email:" data-tr="E-posta:">Email:</label>
-                    <span class="info-value">muhammedist44@gmail.com</span>
+                <div class="info-section">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label data-en="Full Name:" data-tr="Ad Soyad:">Full Name:</label>
+                            <span class="info-value">Muhammed Enes Kandemir</span>
+                        </div>
+                        <div class="info-item">
+                            <label data-en="Email:" data-tr="E-posta:">Email:</label>
+                            <span class="info-value">muhammedist44@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <label data-en="Phone:" data-tr="Telefon:">Phone:</label>
+                            <span class="info-value">+90 505 420 28 52</span>
+                        </div>
+                        <div class="info-item">
+                            <label data-en="Location:" data-tr="Konum:">Location:</label>
+                            <span class="info-value">İstanbul, Türkiye</span>
+                        </div>
+                        <div class="info-item">
+                            <label data-en="GitHub:" data-tr="GitHub:">GitHub:</label>
+                            <span class="info-value"><a href="https://github.com/Luifox53" target="_blank">github.com/Luifox53</a></span>
+                        </div>
+                        <div class="info-item">
+                            <label data-en="LinkedIn:" data-tr="LinkedIn:">LinkedIn:</label>
+                            <span class="info-value"><a href="https://linkedin.com/in/muhammed-enes-kandemir-5829602a1/" target="_blank">linkedin.com/in/muhammed-enes-kandemir</a></span>
+                        </div>
+                        <div class="info-item">
+                            <label data-en="Instagram:" data-tr="Instagram:">Instagram:</label>
+                            <span class="info-value"><a href="https://instagram.com/luifox53" target="_blank">@luifox53</a></span>
+                        </div>
+                        <div class="info-item">
+                            <label data-en="Facebook:" data-tr="Facebook:">Facebook:</label>
+                            <span class="info-value"><a href="https://facebook.com" target="_blank">Facebook Profile</a></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <label data-en="Phone:" data-tr="Telefon:">Phone:</label>
-                    <span class="info-value">+90 505 420 28 52</span>
-                </div>
-                <div class="info-item">
-                    <label data-en="Location:" data-tr="Konum:">Location:</label>
-                    <span class="info-value">İstanbul, Türkiye</span>
-                </div>
-                <div class="info-item">
-                    <label data-en="GitHub:" data-tr="GitHub:">GitHub:</label>
-                    <span class="info-value">github.com/Luifox53</span>
-                </div>
-                <div class="info-item">
-                    <label data-en="LinkedIn:" data-tr="LinkedIn:">LinkedIn:</label>
-                    <span class="info-value">linkedin.com/in/muhammed-enes-kandemir-5829602a1/</span>
+                <div class="floating-cards">
+                    <div class="card card-orbit">
+                        <div class="orbit-ring"></div>
+                        <span class="card-number">3</span>
+                        <p data-en="Years of Passion" data-tr="Aktif Çalışma">Years of Passion</p>
+                    </div>
+                    <div class="card card-orbit">
+                        <div class="orbit-ring"></div>
+                        <span class="card-number">5+</span>
+                        <p data-en="Major Projects" data-tr="Büyük Projeler">Major Projects</p>
+                    </div>
+                    <div class="card card-orbit">
+                        <div class="orbit-ring"></div>
+                        <span class="card-number">100%</span>
+                        <p data-en="Commitment" data-tr="Güvenilirlik">Commitment</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,52 +123,104 @@
 
     <!-- Education Section -->
     <section id="education" class="education">
-        <h2 data-en="Education" data-tr="Eğitim">Education</h2>
-        <div class="education-content">
-            <div class="education-item">
-                <div class="edu-header">
-                    <h3>Artvin Çoruh University</h3>
-                    <span class="edu-date">2023 - Still</span>
+        <div class="container">
+            <h2 class="section-title" data-en="Education" data-tr="Eğitim">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="edu-header">
+                        <h3 data-en="Artvin Çoruh University" data-tr="Artvin Çoruh Üniversitesi">Artvin Çoruh University</h3>
+                        <span class="edu-date" data-en="2023 - Present" data-tr="2023 - Halen">2023 - Present</span>
+                    </div>
+                    <p class="edu-degree" data-en="Bachelor of Science in Computer Engineering" data-tr="Bilgisayar Mühendisliği Lisans Derecesi">Bachelor of Science in Computer Engineering</p>
+                    <p class="edu-description" data-en="Currently in 3rd year" data-tr="Şu anda 3. yılda">Currently in 3rd year</p>
                 </div>
-                <p class="edu-degree" data-en="Bachelor of Science in Computer Engineering" data-tr="Bilgisayar Mühendisliği Lisans Derecesi">Bachelor of Science in Computer Engineering</p>
-                <p class="edu-description" data-en="Currently in 3rd year" data-tr="Şu anda 3. yılda">Currently in 3rd year</p>
-            </div>
-            <div class="education-item">
-                <div class="edu-header">
-                    <h3>Mustafa Kemal Anatolian Highschool</h3>
-                    <span class="edu-date">2018 - 2022</span>
+                <div class="education-item">
+                    <div class="edu-header">
+                        <h3 data-en="Mustafa Kemal Anatolian Highschool" data-tr="Mustafa Kemal Anadolu Lisesi">Mustafa Kemal Anatolian Highschool</h3>
+                        <span class="edu-date">2018 - 2022</span>
+                    </div>
+                    <p class="edu-degree" data-en="High School Diploma" data-tr="Lise Diploması">High School Diploma</p>
+                    <p class="edu-description" data-en="Completed education" data-tr="Eğitimi tamamlandı">Completed education</p>
                 </div>
-                <p class="edu-degree" data-en="High School Diploma" data-tr="Lise Diploması">High School Diploma</p>
-                <p class="edu-description" data-en="Completed education" data-tr="Eğitimi tamamlandı">Completed education</p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2 data-en="Technical Skills" data-tr="Teknik Yetenekler">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3 data-en="Programming Languages" data-tr="Programlama Dilleri">Programming Languages</h3>
-                <div class="skill-items">
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">C++</div>
-                    <div class="skill-tag">C#</div>
+        <div class="container">
+            <h2 class="section-title" data-en="Technical Skills" data-tr="Teknik Yetenekler">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-en="Programming Languages" data-tr="Programlama Dilleri">Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">C++</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">C#</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3 data-en="Web Development" data-tr="Web Geliştirme">Web Development</h3>
-                <div class="skill-items">
-                    <div class="skill-tag">PHP</div>
-                    <div class="skill-tag">WordPress</div>
-                    <div class="skill-tag">HTML&Css</div>
+                <div class="skill-category">
+                    <h3 data-en="Web Development" data-tr="Web Geliştirme">Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">PHP</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">WordPress</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">HTML & CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3 data-en="Other Skills" data-tr="Diğer Yetenekler">Other Skills</h3>
-                <div class="skill-items">
-                    <div class="skill-tag">Project Manager</div>
-                    <div class="skill-tag">Solutionist</div>
+                <div class="skill-category">
+                    <h3 data-en="Other Skills" data-tr="Diğer Yetenekler">Other Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name" data-en="Project Manager" data-tr="Proje Yürütücüsü">Project Manager</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="87"></div>
+                            </div>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-en="Problem Solving" data-tr="Problem Çözücü">Problem Solving</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="93"></div>
+                            </div>
+                            <span class="skill-percent">93%</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,66 +228,84 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2 data-en="Projects" data-tr="Projeler">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>YEDOKS</h3>
+        <div class="container">
+            <h2 class="section-title" data-en="Projects" data-tr="Projeler">Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="project-visual">
+                        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <div class="project-badge">Featured</div>
+                    </div>
+                    <div class="project-details">
+                        <h3 data-en="YEDOKS" data-tr="YEDOKS">YEDOKS</h3>
+                        <p class="project-subtitle" data-en="Smart Irrigation System" data-tr="Akıllı Sulama Sistemi">Smart Irrigation System</p>
+                        <p data-en="Autonomous and smart campus irrigation system based on renewable energy." data-tr="Yenilenebilir enerjiye dayalı otonom, akıllı ve veri odaklı kampüs sulama sistemi.">Autonomous and smart campus irrigation system based on renewable energy.</p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                        <a href="https://github.com/Luifox53/Automate-Irrigation-System" class="project-link" target="_blank" data-en="View on GitHub" data-tr="GitHub'da Gör">View on GitHub →</a>
+                    </div>
                 </div>
-                <p data-en="Autonomous and smart campus irrigation system based on renewable energy." data-tr="Yenilenebilir enerjiye dayalı otonom, akıllı ve veri odaklıkampüs sulama sistemi.">Describe your first project here. What technologies did you use? What problem did it solve?</p>
-                <div class="project-tags">
-                    <span class="tag">C++</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">IoT</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">Data Analysis</span>
+
+                <div class="project-item">
+                    <div class="project-visual">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <div class="project-badge">Live</div>
+                    </div>
+                    <div class="project-details">
+                        <h3 data-en="Transfer-Reservation Site" data-tr="Transfer-Rezervasyon Sitesi">Transfer-Reservation Site</h3>
+                        <p class="project-subtitle" data-en="VIP Transfer Booking Platform" data-tr="VIP Transfer Rezervasyon Platformu">VIP Transfer Booking Platform</p>
+                        <p data-en="A website that allows customers who need VIP transfers within Antalya to book a vehicle." data-tr="Antalya içi vip transfere ihtiyacı olan müşterilerin araç rezervasyonu yapmasına olanak veren bir site.">A website that allows customers who need VIP transfers within Antalya to book a vehicle.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Server Management</span>
+                            <span class="tag">WordPress</span>
+                        </div>
+                        <a href="https://antalyatransfer-vip.com/" class="project-link" target="_blank" data-en="Visit Website" data-tr="Siteyi Ziyaret Et">Visit Website →</a>
+                    </div>
                 </div>
-                <a href="https://github.com/Luifox53/Automate-Irrigation-System" class="project-link" target="_blank" data-en="View Project" data-tr="Projeyi Gör">View Project</a>
-            </div>
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Transfer-Reservation Site</h3>
+
+                <div class="project-item">
+                    <div class="project-visual">
+                        <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <div class="project-badge">Academic</div>
+                    </div>
+                    <div class="project-details">
+                        <h3 data-en="DB Management System" data-tr="Veritabanı Yönetim Sistemi">DB Management System</h3>
+                        <p class="project-subtitle" data-en="Database Administration Tool" data-tr="Veritabanı Yönetim Aracı">Database Administration Tool</p>
+                        <p data-en="Database management system with comprehensive tools for data organization and analysis." data-tr="Veri organizasyonu ve analizi için kapsamlı araçlara sahip veritabanı yönetim sistemi.">Database management system with comprehensive tools for data organization and analysis.</p>
+                        <div class="project-tags">
+                            <span class="tag">XAMPP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Dia Diagram</span>
+                        </div>
+                        <a href="#" class="project-link" data-en="View Project" data-tr="Projeyi Gör">View Project →</a>
+                    </div>
                 </div>
-                <p data-en="A website that allows customers who need VIP transfers within Antalya to book a vehicle." data-tr="Antalya içi vip transfere ihtiyacı olan müşterilerin araç rezervasyonu yapmasına olanak veren bir site.">Describe your second project here. Highlight the key features and your contributions.</p>
-                <div class="project-tags">
-                    <span class="tag">PHP</span>
-                    <span class="tag">Web Development</span>
-                    <span class="tag">Server Management</span>
-                    <span class="tag">WordPress</span>
-                </div>
-                <a href="https://antalyatransfer-vip.com/" class="project-link" target="_blank" data-en="View Project" data-tr="Projeyi Gör">View Project</a>
-            </div>
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>DB Management System</h3>
-                </div>
-                <p data-en="Describe your third project. Include any awards, recognitions, or impressive results." data-tr="Üçüncü projenizi açıklayın. Ödülleriniz, takdir görenleriniz veya etkileyici sonuçlarınızı ekleyin.">Describe your third project. Include any awards, recognitions, or impressive results.</p>
-                <div class="project-tags">
-                    <span class="tag">XAMMP</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">Dia Diagram</span>
-                </div>
-                <a href="#" class="project-link" data-en="View Project" data-tr="Projeyi Gör">View Project</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2 data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <input type="text" placeholder="Your Name" data-placeholder-en="Your Name" data-placeholder-tr="Adınız" required>
+        <div class="lightning-bg"></div>
+        <div class="container">
+            <h2 class="section-title" data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="https://github.com/Luifox53" target="_blank" class="social-icon social-bounce" title="GitHub">GitHub</a>
+                    <a href="https://linkedin.com/in/muhammed-enes-kandemir-5829602a1/" target="_blank" class="social-icon social-bounce" title="LinkedIn">LinkedIn</a>
+                    <a href="mailto:muhammedist44@gmail.com" class="social-icon social-bounce" title="Email">Email</a>
+                    <a href="tel:+90505420028252" class="social-icon social-bounce" title="Phone">Phone</a>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="email" placeholder="Your Email" data-placeholder-en="Your Email" data-placeholder-tr="E-postanız" required>
-            </div>
-            <div class="form-group">
-                <textarea placeholder="Your Message" data-placeholder-en="Your Message" data-placeholder-tr="Mesajınız" rows="6" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" data-en="Send Message" data-tr="Mesaj Gönder">Send Message</button>
-        </form>
+        </div>
     </section>
 
     <!-- Footer -->
