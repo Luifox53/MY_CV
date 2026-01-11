@@ -11,7 +11,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Muhammed Enes Kandemir</div>
-            <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -24,8 +24,8 @@
                 <li><a href="#projects" class="nav-link" data-en="Projects" data-tr="Projeler" onclick="closeMenu()">Projects</a></li>
                 <li><a href="#contact" class="nav-link" data-en="Contact" data-tr="İletişim" onclick="closeMenu()">Contact</a></li>
             </ul>
-            <button class="language-toggle" onclick="toggleLanguage()">
-                <span class="lang-text">TR</span>
+            <button class="language-toggle">
+                <span class="lang-text" data-en="TR" data-tr="EN">EN</span>
             </button>
         </div>
     </nav>
@@ -38,19 +38,19 @@
         <div class="morphing-shape shape-2"></div>
         <div class="hero-content">
             <div class="profile-image-container">
-                <img id="profileImage" src="Mek_PP.png" alt="Profile Photo" class="profile-image">
+                <img id="profileImage" src="media/Mek_PP.png" alt="Profile Photo" class="profile-image">
             </div>
             <h1 class="hero-title" data-en="Hi, I'm Enes" data-tr="Merhaba, Ben Enes"><span class="word">Hi,</span> <span class="word">I'm</span> <span class="gradient-text word">Enes</span></h1>
             <p class="hero-subtitle hero-animated" data-en="Computer Engineering Student | 3rd Year" data-tr="Bilgisayar Mühendisliği Öğrencisi | 3. Yıl">Computer Engineering Student | 3rd Year</p>
         </div>
         <div class="hero-3d">
             <div class="cube">
-                <div class="cube-face front">3D</div>
+                <div class="cube-face front">AI</div>
                 <div class="cube-face back">Dev</div>
                 <div class="cube-face right">Web</div>
-                <div class="cube-face left">Code</div>
-                <div class="cube-face top">Skills</div>
-                <div class="cube-face bottom">Fun</div>
+                <div class="cube-face left">OOP</div>
+                <div class="cube-face top">IoT</div>
+                <div class="cube-face bottom">CS</div>
             </div>
         </div>
         <div class="code-animation" id="codeAnimation"></div>
@@ -63,6 +63,23 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="typing-text" data-en="Passionate computer engineering student with a strong foundation in programming and web development. I love solving complex problems and building innovative solutions. Currently pursuing my degree at Artvin Çoruh University while constantly expanding my technical skills through practical projects." data-tr="Programlama ve web geliştirmede güçlü bir temele sahip, tutkulu bir bilgisayar mühendisliği öğrencisiyim. Karmaşık sorunları çözmek ve yenilikçi çözümler geliştirmekten hoşlanırım. Şu anda Artvin Çoruh Üniversitesi'nde lisans derecesine devam ederken, pratik projeler aracılığıyla teknik becerilerimi sürekli genişletiyorum.">Passionate computer engineering student with a strong foundation in programming and web development. I love solving complex problems and building innovative solutions. Currently pursuing my degree at Artvin Çoruh University while constantly expanding my technical skills through practical projects.</p>
+                    <div class="floating-cards">
+                    <div class="card card-orbit">
+                        <div class="orbit-ring"></div>
+                        <span class="card-number">3</span>
+                        <p data-en="Years of Passion" data-tr="Yıldır Aktif Çalışma">Years of Passion</p>
+                    </div>
+                    <div class="card card-orbit">
+                        <div class="orbit-ring"></div>
+                        <span class="card-number">5+</span>
+                        <p data-en="Major Projects" data-tr="Büyük Projeler">Major Projects</p>
+                    </div>
+                    <div class="card card-orbit">
+                        <div class="orbit-ring"></div>
+                        <span class="card-number">100%</span>
+                        <p data-en="Commitment" data-tr="Güvenilirlik">Commitment</p>
+                    </div>
+                </div>
                 </div>
                 <div class="info-section">
                     <div class="info-grid">
@@ -92,29 +109,12 @@
                         </div>
                         <div class="info-item">
                             <label data-en="Instagram:" data-tr="Instagram:">Instagram:</label>
-                            <span class="info-value"><a href="https://instagram.com/luifox53" target="_blank">@luifox53</a></span>
+                            <span class="info-value"><a href="https://instagram.com/ens.kandemir" target="_blank">@ens.kandemir</a></span>
                         </div>
                         <div class="info-item">
                             <label data-en="Facebook:" data-tr="Facebook:">Facebook:</label>
                             <span class="info-value"><a href="https://facebook.com" target="_blank">Facebook Profile</a></span>
                         </div>
-                    </div>
-                </div>
-                <div class="floating-cards">
-                    <div class="card card-orbit">
-                        <div class="orbit-ring"></div>
-                        <span class="card-number">3</span>
-                        <p data-en="Years of Passion" data-tr="Aktif Çalışma">Years of Passion</p>
-                    </div>
-                    <div class="card card-orbit">
-                        <div class="orbit-ring"></div>
-                        <span class="card-number">5+</span>
-                        <p data-en="Major Projects" data-tr="Büyük Projeler">Major Projects</p>
-                    </div>
-                    <div class="card card-orbit">
-                        <div class="orbit-ring"></div>
-                        <span class="card-number">100%</span>
-                        <p data-en="Commitment" data-tr="Güvenilirlik">Commitment</p>
                     </div>
                 </div>
             </div>
@@ -233,8 +233,8 @@
             <div class="projects-container">
                 <div class="project-item">
                     <div class="project-visual">
-                        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                        <div class="project-badge">Featured</div>
+                        <img class="project-image" src="media/yedoks_circuit_kopya.jpg" alt="YEDOKS">
+                        <div class="project-badge" data-en="Featured" data-tr="Öne Çıkan">Featured</div>
                     </div>
                     <div class="project-details">
                         <h3 data-en="YEDOKS" data-tr="YEDOKS">YEDOKS</h3>
@@ -242,7 +242,6 @@
                         <p data-en="Autonomous and smart campus irrigation system based on renewable energy." data-tr="Yenilenebilir enerjiye dayalı otonom, akıllı ve veri odaklı kampüs sulama sistemi.">Autonomous and smart campus irrigation system based on renewable energy.</p>
                         <div class="project-tags">
                             <span class="tag">C++</span>
-                            <span class="tag">Machine Learning</span>
                             <span class="tag">IoT</span>
                             <span class="tag">PHP</span>
                             <span class="tag">Data Analysis</span>
@@ -253,8 +252,8 @@
 
                 <div class="project-item">
                     <div class="project-visual">
-                        <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                        <div class="project-badge">Live</div>
+                        <img class="project-image fit-center" src="media/rentacarfavicologo.png" alt="Transfer-Reservation Site">
+                        <div class="project-badge" data-tr="Canlı" data-en="Live">Live</div>
                     </div>
                     <div class="project-details">
                         <h3 data-en="Transfer-Reservation Site" data-tr="Transfer-Rezervasyon Sitesi">Transfer-Reservation Site</h3>
@@ -272,20 +271,20 @@
 
                 <div class="project-item">
                     <div class="project-visual">
-                        <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                        <div class="project-badge">Academic</div>
+                        <img class="project-image gradient-back" src="media/enufus.png" alt="E-Nufus">
+                        <div class="project-badge" data-en="Academic" data-tr="Akademik">Academic</div>
                     </div>
                     <div class="project-details">
-                        <h3 data-en="DB Management System" data-tr="Veritabanı Yönetim Sistemi">DB Management System</h3>
+                        <h3 data-en="E-Population" data-tr="E-Nüfus">E-Nüfus</h3>
                         <p class="project-subtitle" data-en="Database Administration Tool" data-tr="Veritabanı Yönetim Aracı">Database Administration Tool</p>
                         <p data-en="Database management system with comprehensive tools for data organization and analysis." data-tr="Veri organizasyonu ve analizi için kapsamlı araçlara sahip veritabanı yönetim sistemi.">Database management system with comprehensive tools for data organization and analysis.</p>
                         <div class="project-tags">
-                            <span class="tag">XAMPP</span>
+                            <span class="tag">Data Management</span>
                             <span class="tag">MySQL</span>
                             <span class="tag">PHP</span>
                             <span class="tag">Dia Diagram</span>
                         </div>
-                        <a href="#" class="project-link" data-en="View Project" data-tr="Projeyi Gör">View Project →</a>
+                        <a href="https://github.com/Luifox53/E-Nufus" class="project-link" data-en="View Project" data-tr="Projeyi Gör">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -302,7 +301,7 @@
                     <a href="https://github.com/Luifox53" target="_blank" class="social-icon social-bounce" title="GitHub">GitHub</a>
                     <a href="https://linkedin.com/in/muhammed-enes-kandemir-5829602a1/" target="_blank" class="social-icon social-bounce" title="LinkedIn">LinkedIn</a>
                     <a href="mailto:muhammedist44@gmail.com" class="social-icon social-bounce" title="Email">Email</a>
-                    <a href="tel:+90505420028252" class="social-icon social-bounce" title="Phone">Phone</a>
+                    <a href="tel:+905054202852" class="social-icon social-bounce" title="Phone" data-en="Phone" data-tr="Telefon">Phone</a>
                 </div>
             </div>
         </div>
@@ -310,7 +309,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p data-en="&copy; 2025 Enes Portfolio. All rights reserved." data-tr="&copy; 2025 Enes Portfolyosu. Tüm hakları saklıdır.">&copy; 2025 Enes Portfolio. All rights reserved.</p>
+        <p data-en="&copy; 2026 Enes Portfolio. All rights reserved." data-tr="&copy; 2026 Enes Portfolyosu. Tüm hakları saklıdır.">&copy; 2026 Enes Portfolio. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
