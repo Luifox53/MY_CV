@@ -1,0 +1,67 @@
+KİŞİSEL BİLGİLER
+
+Ad Soyad: Muhammed Enes Kandemir
+
+Unvan: Bilgisayar Mühendisliği Öğrencisi (3. Sınıf)
+
+Konum: İstanbul, Türkiye
+
+E-posta: muhammedist44@gmail.com
+
+Telefon: +90 505 420 28 52
+
+SOSYAL MEDYA VE PROFİL LİNKLERİ
+
+GitHub: https://github.com/Luifox53
+
+LinkedIn: https://linkedin.com/in/muhammed-enes-kandemir-5829602a1/
+
+Instagram: @ens.kandemir
+
+Facebook: Facebook Profil Linki
+
+EĞİTİM BİLGİLERİ
+
+Lisans: Artvin Çoruh Üniversitesi - Bilgisayar Mühendisliği (2023 - Halen / 3. Sınıf)
+
+Lise: Mustafa Kemal Anadolu Lisesi (2018 - 2022 / Mezun)
+
+TEKNİK YETENEKLER
+
+Programlama Dilleri: Python (%90), C++ (%85), C# (%80)
+
+Web Geliştirme: HTML & CSS (%95), WordPress (%92), PHP (%88)
+
+Diğer Yetenekler: Problem Çözme (%93), Proje Yürütücülüğü (%87), İngilizce (İleri Seviye - B2 / %80)
+
+PROJELER
+
+YEDOKS (Öne Çıkan Proje)
+
+Tür: Akıllı Sulama Sistemi
+
+Açıklama: Yenilenebilir enerjiye dayalı otonom, akıllı ve veri odaklı kampüs sulama sistemi.
+
+Kullanılan Teknolojiler: C++, IoT, PHP, Veri Analizi
+
+Bağlantı: https://github.com/Luifox53/Automate-Irrigation-System
+
+Transfer-Rezervasyon Sitesi (Canlı Proje)
+
+Tür: VIP Transfer Rezervasyon Platformu
+
+Açıklama: Antalya içi VIP transfere ihtiyacı olan müşterilerin araç rezervasyonu yapmasına olanak sağlayan web sitesi.
+
+Kullanılan Teknolojiler: PHP, Web Geliştirme, Sunucu Yönetimi, WordPress
+
+Bağlantı: https://antalyatransfer-vip.com/
+
+E-Nüfus (Akademik Proje)
+
+Tür: Veritabanı Yönetim Aracı
+
+Açıklama: Veri organizasyonu ve analizi için kapsamlı araçlara sahip veritabanı yönetim sistemi.
+
+Kullanılan Teknolojiler: Veri Yönetimi, MySQL, PHP, Dia Diagram
+
+Bağlantı: https://github.com/Luifox53/E-Nufus
